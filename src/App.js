@@ -8,6 +8,8 @@ import { projContent } from './content/projectContent'
 
 function App() {
 
+  // style={{backgroundImage: "url('https://wallpaperaccess.com/full/212811.jpg')"}}
+
       return (
           <div className="h-screen overflow-hidden bg-stone-100">
             <Navbar/>

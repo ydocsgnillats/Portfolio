@@ -3,7 +3,7 @@ import { projContent } from "../content/projectContent";
 function Project({ option }) {
   return (
     <>
-      <div className="sm:grid sm:grid-cols-3 rounded-lg border border-stone-200 m-4 sm:pl-24 p-12">
+      <div className="sm:grid sm:grid-cols-3 rounded-lg border border-stone-200 m-2 sm:pl-24 p-12">
         <div className="text-xl sm:pl-4 sm:pr-4">
           <img
             className="rounded-lg border border-stone-400"

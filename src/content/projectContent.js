@@ -13,7 +13,7 @@ export const projContent = [
     site: "https://www.ccme.io",
     github: "https://github.com/ydocsgnillats/ccme",
     path: "/1",
-    technologies: ["react", "redux", "MongoDB", "Express", "Sass"],
+    technologies: ["react", "Moralis", "Tailwind"],
   },
   {
     title: "Old School Watches",
@@ -33,7 +33,7 @@ export const projContent = [
     site: "https://itsfinallyforever.com",
     github: "https://github.com/ydocsgnillats/finallyforever",
     path: "/3",
-    technologies: ["react", "typescript", "Sass"],
+    technologies: ["react", "redux", "typescript", "Sass"],
   },
   {
     title: "Teens Tutor Teens App",

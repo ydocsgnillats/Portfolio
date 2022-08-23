@@ -1,7 +1,7 @@
 function Resume() {
   return (
     <div className="h-screen grid place-items-center">
-      <p className="font-medium border-t border-slate-800 p-2">
+      <p className="font-medium sm:border-t border-slate-800 p-2 -border-x-2">
         Developer with competency in multiple programming languages and
         frameworks aligned with current industry standards
       </p>

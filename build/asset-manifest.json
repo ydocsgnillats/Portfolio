@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.3fcfda52.css",
-    "main.js": "/static/js/main.e6b3f2c0.js",
+    "main.css": "/static/css/main.5e2d760e.css",
+    "main.js": "/static/js/main.418f676d.js",
     "static/media/CodyResumeMAY2022.pdf": "/static/media/CodyResumeMAY2022.b15444dbabcf5d9e10e1.pdf",
+    "static/media/profile.jpeg": "/static/media/profile.17426e468d1b182429cd.jpeg",
     "static/media/ccme.jpeg": "/static/media/ccme.76cfbc3f085c3e33b4d1.jpeg",
     "static/media/ttt.jpeg": "/static/media/ttt.92a680e4bcc776287b5d.jpeg",
     "static/media/finallyforever.jpeg": "/static/media/finallyforever.51274c86822a2d659266.jpeg",
     "static/media/watch.jpeg": "/static/media/watch.bf57a6ceea55fa1d24a2.jpeg",
     "static/media/tetrachrome.jpeg": "/static/media/tetrachrome.04dd2450b6287fe3e46e.jpeg",
     "index.html": "/index.html",
-    "main.3fcfda52.css.map": "/static/css/main.3fcfda52.css.map",
-    "main.e6b3f2c0.js.map": "/static/js/main.e6b3f2c0.js.map"
+    "main.5e2d760e.css.map": "/static/css/main.5e2d760e.css.map",
+    "main.418f676d.js.map": "/static/js/main.418f676d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fcfda52.css",
-    "static/js/main.e6b3f2c0.js"
+    "static/css/main.5e2d760e.css",
+    "static/js/main.418f676d.js"
   ]
 }

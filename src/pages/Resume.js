@@ -1,17 +1,17 @@
 function Resume() {
   return (
     <div className="h-screen grid place-items-center">
-      <p className="font-medium sm:border-t border-slate-800 p-2 -border-x-2">
+      <p className="font-medium lg:border-t border-slate-800 p-2 -border-x-2">
         Developer with competency in multiple programming languages and
         frameworks aligned with current industry standards
       </p>
-      <p className="font-medium sm:p-0 p-2">
+      <p className="font-medium lg:p-0 p-2">
         Top proficiencies: JavaScript (React, NodeJS), C#, Python
       </p>
       <p className="grid border-b border-slate-800 p-2 w-4/5 place-items-center">
         Currently employed as a Software Developer at AJC
       </p>
-      <div className="grid w-4/5 sm:grid-cols-2 sm:gap-2">
+      <div className="grid w-4/5 lg:grid-cols-2 lg:gap-2">
         <div className="">
           <div className="grid place-items-center border-b w-4/5 border-slate-800 p-4">
             <p>info@codystallings.dev</p>
@@ -33,7 +33,7 @@ function Resume() {
             <li>Mobile app development</li>
             <li>Data Analytics for business applications</li>
           </div>
-          <div className="sm:mt-4 mt-12 w-4/5">
+          <div className="lg:mt-4 mt-12 w-4/5">
             <h1 className="font-medium text-xl">Education</h1>
             <p className="font-medium">B.S. - Computer Science</p>
             <p>University of North Georgia</p>
@@ -51,7 +51,7 @@ function Resume() {
         </div>
         <div>
           <div className="list-none">
-            <h1 className="text-2xl font-medium grid sm:place-items-center mt-4">
+            <h1 className="text-2xl font-medium grid lg:place-items-center mt-4">
               Professional History
             </h1>
             <p className="font-medium mt-2">
@@ -140,7 +140,7 @@ function Resume() {
         href={require("../assets/CodyResumeMAY2022.pdf")}
         download="CodyStallings-Resume"
       >
-        <button className="border rounded-lg border-black p-2 animate-bounce sm:-mt-12 sm:-ml-80 mt-12 mb-4">
+        <button className="border rounded-lg border-black p-2 animate-bounce lg:-mt-12 lg:-ml-80 mt-12 mb-4">
           Download Resume
         </button>
       </a>

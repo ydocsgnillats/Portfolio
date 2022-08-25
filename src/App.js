@@ -6,13 +6,15 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="">
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
+      <div className="lg:pt-20">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+      </div>
     </div>
   );
 }

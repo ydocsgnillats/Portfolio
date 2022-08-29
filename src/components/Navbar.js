@@ -8,9 +8,7 @@ const Navbar = () => {
   const toggleDark = () => {
     setDarkMode(!darkMode);
     document.body.style.color = `${darkMode ? "black" : "white"}`;
-    document.body.style.backgroundColor = `${
-      darkMode ? "white" : "blacknpm run-sc"
-    }`;
+    document.body.style.backgroundColor = `${darkMode ? "white" : "black"}`;
   };
 
   // const changeBackground = () => {

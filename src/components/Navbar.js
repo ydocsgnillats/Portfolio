@@ -1,14 +1,5 @@
 import { FiSettings } from "react-icons/fi";
 import { useState } from "react";
-import bg1 from "../assets/bg1.jpeg";
-import bg2 from "../assets/bg2.jpeg";
-import bg4 from "../assets/bg4.jpeg";
-import bg7 from "../assets/bg7.jpeg";
-import bg8 from "../assets/bg8.jpeg";
-import bg9 from "../assets/bg9.jpeg";
-import bg10 from "../assets/bg10.jpeg";
-import bg11 from "../assets/bg11.jpeg";
-import bg12 from "../assets/bg12.jpeg";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,13 +8,16 @@ const Navbar = () => {
   const toggleDark = () => {
     setDarkMode(!darkMode);
     document.body.style.color = `${darkMode ? "black" : "white"}`;
+    document.body.style.backgroundColor = `${
+      darkMode ? "white" : "blacknpm run-sc"
+    }`;
   };
 
-  const changeBackground = () => {
-    const bgs = [bg1, bg2, bg4, bg7, bg8, bg9, bg10, bg11, bg12];
-    let selection = bgs[Math.floor(Math.random() * 9)];
-    document.body.style.backgroundImage = `url(${selection})`;
-  };
+  // const changeBackground = () => {
+  //   const bgs = [bg1, bg2, bg4, bg7, bg8, bg9, bg10, bg11, bg12];
+  //   let selection = bgs[Math.floor(Math.random() * 9)];
+  //   document.body.style.backgroundImage = `url(${selection})`;
+  // };
 
   return (
     <>
@@ -37,16 +31,20 @@ const Navbar = () => {
           </a>
         </div>
         <div className="lg:flex-grow -ml-8 lg:ml-0">
-          <div className="text-md lg:pt-1">
+          <div className="text-lg lg:pt-1">
             <a
               href="/projects"
-              className="hover:border-black border-stone-100 m-4"
+              className={`hover:border-${
+                darkMode ? "white" : "black"
+              } hover:border-b m-4`}
             >
               Projects
             </a>
             <a
               href="/resume"
-              className="hover:border-black border-stone-100 m-4"
+              className={`hover:border-${
+                darkMode ? "white" : "black"
+              } hover:border-b m-4`}
             >
               Resume
             </a>
@@ -71,14 +69,14 @@ const Navbar = () => {
                 {darkMode ? "Dark" : "Light"} Mode
               </button>
             </li>
-            <li>
+            {/* <li>
               <button
                 onClick={() => changeBackground()}
                 className="border border-stone-600 p-2 m-2 -ml-1 rounded-xl"
               >
                 Change Background
               </button>
-            </li>
+            </li> */}
           </div>
         </div>
       )}

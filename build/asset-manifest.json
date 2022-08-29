@@ -1,9 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.0553d5b5.css",
-    "main.js": "/static/js/main.20af24ea.js",
+    "main.css": "/static/css/main.71947f53.css",
+    "main.js": "/static/js/main.dccdd610.js",
+    "static/media/bg8.jpeg": "/static/media/bg8.9e2729f8b86275fd5050.jpeg",
     "static/media/bg12.jpeg": "/static/media/bg12.cf86d03fb4dfd8ca9e69.jpeg",
+    "static/media/bg11.jpeg": "/static/media/bg11.23fb24831de9d46bd23f.jpeg",
+    "static/media/bg7.jpeg": "/static/media/bg7.7527f2710cf7248f4664.jpeg",
+    "static/media/bg10.jpeg": "/static/media/bg10.7f868abcc0f94783bfdb.jpeg",
+    "static/media/bg9.jpeg": "/static/media/bg9.01a0159bcd3be0e18a5d.jpeg",
     "static/media/CodyResumeMAY2022.pdf": "/static/media/CodyResumeMAY2022.b15444dbabcf5d9e10e1.pdf",
+    "static/media/bg1.jpeg": "/static/media/bg1.983b7c5e901777a9f7f1.jpeg",
+    "static/media/bg4.jpeg": "/static/media/bg4.6c1e7b734def93c00f96.jpeg",
+    "static/media/bg2.jpeg": "/static/media/bg2.1f391858783b7df3813e.jpeg",
     "static/media/profile.jpeg": "/static/media/profile.17426e468d1b182429cd.jpeg",
     "static/media/ccme.jpeg": "/static/media/ccme.76cfbc3f085c3e33b4d1.jpeg",
     "static/media/ttt.jpeg": "/static/media/ttt.92a680e4bcc776287b5d.jpeg",
@@ -11,11 +19,11 @@
     "static/media/watch.jpeg": "/static/media/watch.bf57a6ceea55fa1d24a2.jpeg",
     "static/media/tetrachrome.jpeg": "/static/media/tetrachrome.04dd2450b6287fe3e46e.jpeg",
     "index.html": "/index.html",
-    "main.0553d5b5.css.map": "/static/css/main.0553d5b5.css.map",
-    "main.20af24ea.js.map": "/static/js/main.20af24ea.js.map"
+    "main.71947f53.css.map": "/static/css/main.71947f53.css.map",
+    "main.dccdd610.js.map": "/static/js/main.dccdd610.js.map"
   },
   "entrypoints": [
-    "static/css/main.0553d5b5.css",
-    "static/js/main.20af24ea.js"
+    "static/css/main.71947f53.css",
+    "static/js/main.dccdd610.js"
   ]
 }

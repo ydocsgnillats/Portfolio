@@ -1,84 +1,70 @@
-import { FiSettings } from "react-icons/fi";
+import { WiDaySunny } from "react-icons/wi";
+import { MdOutlineModeNight } from "react-icons/md";
+import { BsArrowLeftCircle } from "react-icons/bs";
+import Profile from "../assets/profile.jpeg";
 import { useState } from "react";
 
-const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+const Navbar = (props) => {
+  const [dark, setDark] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const toggleDark = () => {
-    setDarkMode(!darkMode);
-    document.body.style.color = `${darkMode ? "black" : "white"}`;
-    document.body.style.backgroundColor = `${darkMode ? "white" : "black"}`;
+    setDark(!dark);
+    props.toggleDarkMode();
   };
 
-  // const changeBackground = () => {
-  //   const bgs = [bg1, bg2, bg4, bg7, bg8, bg9, bg10, bg11, bg12];
-  //   let selection = bgs[Math.floor(Math.random() * 9)];
-  //   document.body.style.backgroundImage = `url(${selection})`;
-  // };
+  const toggleNav = () => {
+    setNav(!nav);
+    props.toggleNavOpen();
+  };
 
   return (
-    <>
-      <nav className="flex lg:fixed lg:w-[99%] lg:items-center border-stone-200 opacity-95 p-4 m-2 rounded-lg">
-        <div className="font-semibold lg:text-3xl text-xl">
-          <a href="/" className="lg:mr-8 sm lg:block hidden">
-            Cody Stallings
-          </a>
-          <a href="/" className="mr-12 sm pt-1 lg:hidden block">
-            Cody S
-          </a>
-        </div>
-        <div className="lg:flex-grow -ml-8 lg:ml-0">
-          <div className="text-lg lg:pt-1">
-            <a
-              href="/projects"
-              className={`hover:border-${
-                darkMode ? "white" : "black"
-              } hover:border-b m-4`}
-            >
+    <nav className="flex md:block md:flex-initial md:border-border1 dark:border-darkBorder1 md:border-r rounded-sm md:h-screen -mb-2 md:mb-0 bg-primary dark:bg-darkPrimary text-text1 dark:text-darkText1 p-4 pb-8 md:pb-4">
+      <div className="font-semibold md:text-3xl text-xl">
+        <a href="/" className="md:md:block hidden">
+          Cody Stallings
+        </a>
+        <a href="/" className="mr-[18px] w-24 md:hidden block">
+          Cody S
+        </a>
+      </div>
+      <div className="-ml-8 md:ml-0">
+        <div className="text-md md:pt-1 md:mt-4 flex md:block -mt-4">
+          <div className=" m-4 md:m-0 md:pb-4">
+            <a href="/projects" className="hover:border-border1 hover:border-b">
               Projects
             </a>
-            <a
-              href="/resume"
-              className={`hover:border-${
-                darkMode ? "white" : "black"
-              } hover:border-b m-4`}
-            >
+          </div>
+          <div className="m-4 md:m-0">
+            <a href="/resume" className="hover:border-border1 hover:border-b">
               Resume
             </a>
-            <button
-              className="lg:float-right lg:pr-2 lg:pl-0 lg:pl-4"
-              onClick={() => setToggle(!toggle)}
-            >
-              <FiSettings className="lg:pt-0 pt-2 lg:ml-0 ml-4" size="1.5em" />
-            </button>
           </div>
         </div>
-      </nav>
-      {toggle && (
-        <div>
-          <div className="list-none bg-white opacity-95 fixed lg:right-4 ml-2 lg:ml-0 border-stone-200 border text-black p-4 rounded-xl lg:mt-28 lg:w-64 w-[96%]">
-            <h1 className="text-xl font-bold">Settings</h1>
-            <li>
-              <button
-                onClick={() => toggleDark()}
-                className="border border-stone-600 p-2 m-2 -ml-1 rounded-xl"
-              >
-                {darkMode ? "Dark" : "Light"} Mode
-              </button>
-            </li>
-            {/* <li>
-              <button
-                onClick={() => changeBackground()}
-                className="border border-stone-600 p-2 m-2 -ml-1 rounded-xl"
-              >
-                Change Background
-              </button>
-            </li> */}
-          </div>
-        </div>
-      )}
-    </>
+      </div>
+      <div>
+        <img className="rounded-xl mt-8 hidden md:block" src={Profile} />
+      </div>
+      <button
+        className="md:float-right -mt-2 md:bottom-3 right-3 md:left-3 fixed w-8"
+        onClick={() => toggleDark()}
+      >
+        {dark ? (
+          <WiDaySunny className="md:pt-0 pt-2 md:ml-0 md:ml-4" size="2em" />
+        ) : (
+          <MdOutlineModeNight
+            className="md:pt-0 pt-2 md:ml-0 md:ml-4"
+            size="2em"
+          />
+        )}
+      </button>
+      <button
+        className="-mt-2 md:bottom-3 left-[12.5%] fixed hidden md:block"
+        onClick={() => toggleNav()}
+      >
+        <BsArrowLeftCircle className="md:pt-0 pt-2 md:ml-0 ml-4" size="2em" />
+      </button>
+    </nav>
   );
 };
 

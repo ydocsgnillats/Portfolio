@@ -3,12 +3,34 @@ import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import { BsArrowRightCircle } from "react-icons/bs";
+import { useState } from "react";
 
 function App() {
+  const [dark, setDark] = useState(false);
+  const [nav, setNav] = useState(true);
+
   return (
-    <div>
-      <Navbar />
-      <div className="lg:pt-20">
+    <div className={`${dark ? "dark" : ""} md:flex md:flex-row`}>
+      {nav ? (
+        <div className="md:h-screen bg-primary dark:bg-darkPrimary md:fixed md:w-1/6">
+          <Navbar
+            toggleDarkMode={() => setDark(!dark)}
+            toggleNavOpen={() => setNav(!nav)}
+          />
+        </div>
+      ) : (
+        <div className="fixed bottom-2 left-4 dark:text-darkText1">
+          <button onClick={() => setNav(!nav)}>
+            <BsArrowRightCircle size="2em" />
+          </button>
+        </div>
+      )}
+      <div
+        className={`dark:bg-darkPrimary bg-primary text-text1 dark:text-darkText1 ${
+          nav ? "md:w-5/6 md:ml-[16.6vw]" : ""
+        }`}
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

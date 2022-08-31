@@ -1,19 +1,19 @@
 function Resume() {
   return (
-    <div className="h-screen grid place-items-center">
-      <p className="font-medium lg:border-t border-slate-800 p-2 -border-x-2">
+    <div className="grid place-items-center md:pb-12 md:pt-12 pb-24">
+      <p className="font-medium md:border-t border-border1 dark:border-darkBorder1 p-2 -border-x-2 md:pt-8 pt-4 md:pt-2 md:p-0 pl-10 pr-10 md:pr-0 md:pl-0">
         Developer with competency in multiple programming languages and
         frameworks aligned with current industry standards
       </p>
-      <p className="font-medium lg:p-0 p-2">
+      <p className="font-medium md:p-0 pl-10 pr-10 md:pr-0 md:pl-0">
         Top proficiencies: JavaScript (React, NodeJS), C#, Python
       </p>
-      <p className="grid border-b border-slate-800 p-2 w-4/5 place-items-center">
+      <p className="grid border-b border-border1 dark:border-darkBorder1 p-2 w-4/5 place-items-center">
         Currently employed as a Software Developer at AJC
       </p>
-      <div className="grid w-4/5 lg:grid-cols-2 lg:gap-2">
+      <div className="grid w-4/5 md:grid-cols-2 md:gap-2">
         <div className="">
-          <div className="grid place-items-center border-b w-4/5 border-slate-800 p-4">
+          <div className="grid place-items-center border-b w-4/5 border-border1 p-4">
             <p>info@codystallings.dev</p>
             <p>www.linkedin.com/in/codystallings</p>
             <p>www.github.com/ydocsgnillats</p>
@@ -33,7 +33,7 @@ function Resume() {
             <li>Mobile app development</li>
             <li>Data Analytics for business applications</li>
           </div>
-          <div className="lg:mt-4 mt-12 w-4/5">
+          <div className="md:mt-4 mt-12 w-4/5">
             <h1 className="font-medium text-xl">Education</h1>
             <p className="font-medium">B.S. - Computer Science</p>
             <p>University of North Georgia</p>
@@ -48,14 +48,24 @@ function Resume() {
             <h1 className="font-medium mt-2">Additional Conentration:</h1>
             <p>Minor in Russian Language</p>
           </div>
+          <a
+            href={require("../assets/CodyResumeMAY2022.pdf")}
+            download="CodyStallings-Resume"
+          >
+            <button className="border rounded-md border-border1 dark:border-darkBorder1 p-2 md:p-4 font-bold md:text-xl hover:animate-bounce fixed ml-16 bottom-5 md:relative md:mt-24 md:ml-24">
+              Download Resume
+            </button>
+          </a>
         </div>
         <div>
           <div className="list-none">
-            <h1 className="text-2xl font-medium grid lg:place-items-center mt-4">
+            <h1 className="text-2xl font-medium grid md:place-items-center mt-4">
               Professional History
             </h1>
             <p className="font-medium mt-2">
-              <span className="text-slate-600">Software Engineer,</span>{" "}
+              <span className="text-text2 dark:text-darkText2">
+                Software Engineer,
+              </span>{" "}
               Symtrain – Alpharetta
             </p>
             <p className="font-medium">October 2021 – Current</p>
@@ -74,7 +84,9 @@ function Resume() {
               - Independently managing QA team to ensure product reliability
             </li>
             <p className="font-medium mt-2">
-              <span className="text-slate-600">Data Support Specialist,</span>{" "}
+              <span className="text-text2 dark:text-darkText2">
+                Data Support Specialist,
+              </span>{" "}
               App Vault – Atlanta
             </p>
             <p className="font-medium">February 2021 – October 2021</p>
@@ -85,13 +97,13 @@ function Resume() {
             </li>
             <li> - Ensuring SOC2 compliance</li>
             <p className="font-medium mt-2">
-              <span className="text-slate-600">
+              <span className="text-text2 dark:text-darkText2">
                 AV/IT Support Professional II,
               </span>{" "}
               Georgia Tech – Atlanta
             </p>
             <p className="font-medium mt-2">
-              <span className="text-slate-600">
+              <span className="text-text2 dark:text-darkText2">
                 AV/IT Support Professional I
               </span>
               , Georgia Tech – Atlanta
@@ -136,14 +148,6 @@ function Resume() {
           </div>
         </div>
       </div>
-      <a
-        href={require("../assets/CodyResumeMAY2022.pdf")}
-        download="CodyStallings-Resume"
-      >
-        <button className="border rounded-lg border-black p-2 animate-bounce lg:-mt-12 lg:-ml-80 mt-12 mb-4">
-          Download Resume
-        </button>
-      </a>
     </div>
   );
 }

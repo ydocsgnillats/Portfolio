@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* background-image: url("../src/assets/bg10.jpeg");
-  background-size: contain;
-  background-attachment: fixed; */
+.root,
+#root,
+#docs-root {
+  --primary: #f2ebe5;
+  --secondary: #647295;
+  --button: #9f496e;
+  --border1: #2b262d;
+  --text1: #2b262d;
+  --text-2: #9f496e;
+  --darkPrimary: #1f2833;
+  --darkSecondary: #0b0c10;
+  --darkButton: #45a29e;
+  --darkBorder1: #66fcf1;
+  --darkText1: #66fcf1;
+  --darkText2: #c5c6c7;
 }

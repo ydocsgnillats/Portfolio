@@ -1,13 +1,11 @@
-import Profile from "../assets/profile.jpeg";
-
 function Home() {
   return (
-    <div className="place-items-center border border-stone-200 ml-2 mr-2 rounded-lg lg:mt-2 lg:mb-2">
-      <div className="lg:pl-48 lg:pr-48 p-6">
-        <p className="lg:text-3xl text-2xl lg:text-center font-medium mb-4 lg:pt-0 pt-2">
+    <div className="place-items-center ml-2 mr-2 md:pb-0 pb-4">
+      <div className="md:pl-48 md:pr-48 p-6 md:p-12 rounded-md md:h-screen">
+        <p className="md:text-4xl text-2xl md:text-center font-medium mb-12 md:pt-6 pt-2">
           Software Engineer / Web Developer
         </p>
-        <p className="mb-6 lg:text-center">
+        <p className="mb-6 md:text-center">
           I graduated in 2019 with a B.S. in Computer Science with a focus on
           web development. I have experience doing front-end work building
           websites with HTML/CSS/Javascript, React, Tailwind, and Sass. I also
@@ -20,12 +18,8 @@ function Home() {
           on the projects section of this site, and you can also view and
           download my resume.
         </p>
-        <div className="lg:grid lg:grid-cols-4">
-          <div></div>
-          <div>
-            <img className="rounded-xl" src={Profile} />
-          </div>
-          <div className="lg:pl-8">
+        <div className="md:ml-16 md:mt-16">
+          <div className="md:pl-8">
             <li className="mt-4">
               Software Engineer with competency in multiple programming
               languages and frameworks aligned with current industry standards
@@ -36,9 +30,9 @@ function Home() {
             <li className="mt-4">
               Currently employed as a Software Engineer at AJC
             </li>
-            <p className="mt-10 lg:-ml-8 lg:text-center">
+            <p className="mt-24 md:-ml-36 md:text-center font-bold">
               <a
-                className="p-2 rounded border border-black"
+                className="p-2 md:p-6 rounded border border-border1 dark:border-darkBorder1 md:text-xl"
                 href="https://github.com/ydocsgnillats/React-Portfolio"
                 target="_blank"
               >
@@ -46,7 +40,6 @@ function Home() {
               </a>
             </p>
           </div>
-          <div></div>
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@ function Home() {
           <p className="mt-20 text-center font-bold">
             <a
               className="p-4 md:p-6 rounded-xl hover:bg-button bg-secondary text-primary hover:text-secondary border border-border1 dark:border-darkBorder1 text-lg dark:bg-primary dark:text-darkPrimary"
-              href="https://github.com/ydocsgnillats/React-Portfolio"
+              href="https://github.com/ydocsgnillats/Portfolio"
               target="_blank"
             >
               See this site on github

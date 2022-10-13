@@ -4,3 +4,7 @@ ftp.js
 /node_modules/*
 .gitignore
 
+.DS_Store
+node_modules/.cache/.eslintcache
+src/.DS_Store
+src/.DS_Store

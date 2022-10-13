@@ -5,16 +5,20 @@
 .root,
 #root,
 #docs-root {
-  --primary: #f2ebe5;
-  --secondary: #647295;
-  --button: #9f496e;
+  --primary: #e2e2e2; /*#f2ebe5; */
+  --secondary: #384d48;
+  --button: #acad94;
   --border1: #2b262d;
   --text1: #2b262d;
   --text-2: #9f496e;
-  --darkPrimary: #1f2833;
-  --darkSecondary: #0b0c10;
+  --darkPrimary: #384d48;
+  --darkSecondary: #777a92;
   --darkButton: #45a29e;
   --darkBorder1: #66fcf1;
-  --darkText1: #66fcf1;
-  --darkText2: #c5c6c7;
+  --darkText1: #e4e5f1;
+  --darkText2: #cacde8;
+}
+
+body {
+  background-color: #384d48;
 }

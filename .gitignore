@@ -8,3 +8,6 @@ ftp.js
 node_modules/.cache/.eslintcache
 src/.DS_Store
 src/.DS_Store
+node_modules/.cache/default-development/
+node_modules/.cache/.eslintcache
+node_modules/.cache/default-development/index.pack.old

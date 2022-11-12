@@ -1,10 +1,37 @@
 import ccme from "../assets/ccme.jpeg";
 import finallyforever from "../assets/finallyforever.jpeg";
-import ttt from "../assets/ttt.jpeg";
 import tetrachrome from "../assets/tetrachrome.jpeg";
 import watch from "../assets/watch.jpeg";
+import jolly from "../assets/jollyswapper.jpeg";
+import weirdo from "../assets/weirdoswarm.jpeg";
 
 export const projContent = [
+  {
+    title: "Weirdo Swarm",
+    text:
+      "A fan website built for the band King Gizzard and the Lizard Wizard, showing their live sets, songs played live (and times played live), games, artists, etc.",
+    image: weirdo,
+    site: "https://weirdoswarm.org",
+    github: "https://github.com/ydocsgnillats/weirdoswarm",
+    path: "/1",
+    technologies: [
+      "react",
+      "Sass",
+      "SetlistFM Api",
+      "Firebase",
+      "Web Scraping",
+    ],
+  },
+  {
+    title: "Jolly Swapper",
+    text:
+      "A website made for hosting gift exchanges for different groups. Currently hosting a gift exchange for fans of King Gizzard and the Lizard Wizard. Users sign up, enter relevant information, and are randomly matched with another user based on location + shipping preferences. Emails are sent to each group of matches introducing them to each other. Total users this year: 201.",
+    image: jolly,
+    site: "https://www.jollyswapper.com/gatorgang",
+    github: "https://github.com/ydocsgnillats/",
+    path: "/2",
+    technologies: ["react", "Sass", "Firebase"],
+  },
   {
     title: "CCME",
     text:
@@ -12,7 +39,7 @@ export const projContent = [
     image: ccme,
     site: "https://www.ccme.io",
     github: "https://github.com/ydocsgnillats/ccme",
-    path: "/1",
+    path: "/3",
     technologies: ["react", "Moralis", "Tailwind"],
   },
   {
@@ -22,7 +49,7 @@ export const projContent = [
     image: watch,
     site: "https://www.oldschoolwatches.com",
     github: "https://github.com/ydocsgnillats/",
-    path: "/2",
+    path: "/4",
     technologies: ["react", "tailwind", "api for watch database"],
   },
   {
@@ -32,18 +59,8 @@ export const projContent = [
     image: finallyforever,
     site: "https://itsfinallyforever.com",
     github: "https://github.com/ydocsgnillats/finallyforever",
-    path: "/3",
+    path: "/5",
     technologies: ["react", "redux", "typescript", "Sass"],
-  },
-  {
-    title: "Teens Tutor Teens App",
-    text:
-      "An app built in react-native for the 501(c)3 charity 'Teens Tutor Teens'. It allows users to sign up and explain what they are looking for in a tutor, or what subjects they provide tutoring in.",
-    image: ttt,
-    site: "https://github.com/ydocsgnillats/teenstutorteensapp",
-    github: "https://github.com/ydocsgnillats/teenstutorteensapp",
-    path: "/4",
-    technologies: ["react-native"],
   },
   {
     title: "Tetrachrome",
@@ -51,7 +68,7 @@ export const projContent = [
     image: tetrachrome,
     site: "https://www.tetrachrome.org",
     github: "https://www.tetrachrome.org",
-    path: "/5",
+    path: "/7",
     technologies: ["react", "tailwind"],
   },
 ];

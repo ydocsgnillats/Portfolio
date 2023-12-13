@@ -22,7 +22,7 @@ const Navbar = (props) => {
     <nav className="flex md:block md:flex-initial md:h-screen rounded-md md:rounded-none h-[8vh] bg-primary dark:bg-darkPrimary text-text1 dark:text-darkText1 p-4 md:-ml-1 pb-8 md:pb-4">
       <div className="font-semibold md:text-3xl text-xl">
         <a href="/" className="md:block hidden">
-          Cody Stallings
+          Cody M. Stallings
         </a>
         <a href="/" className="mr-[18px] w-24 md:hidden block">
           Cody S

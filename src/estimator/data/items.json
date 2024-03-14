@@ -1,0 +1,14 @@
+[
+  { "name": "Door", "price": 300.59 },
+  { "name": "Window", "price": 200.58 },
+  { "name": "Light", "price": 57.01 },
+  { "name": "Door2", "price": 490.59 },
+  { "name": "Window2", "price": 170.78 },
+  { "name": "Light2", "price": 59.81 },
+  { "name": "Door3", "price": 270.59 },
+  { "name": "Window3", "price": 180.99 },
+  { "name": "Light3", "price": 27.11 },
+  { "name": "Door4", "price": 360.89 },
+  { "name": "Window4", "price": 270.58 },
+  { "name": "Light4", "price": 64.02 }
+]
